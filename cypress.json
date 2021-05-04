@@ -10,5 +10,10 @@
     "failedStatusCode": false,
     "testFiles": "**/*.{feature,features}",
     "viewportWidth": 1920,
-    "viewportHeight": 1000
+    "viewportHeight": 1000,
+    "reporter":"junit",
+    "reporterOptions":{
+        "mochaFile":"cypress/results/test-results.[hash].xml",
+        "toConsole":true
+    }
 }
