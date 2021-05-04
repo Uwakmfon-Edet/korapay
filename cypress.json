@@ -11,9 +11,8 @@
     "testFiles": "**/*.{feature,features}",
     "viewportWidth": 1920,
     "viewportHeight": 1000,
-    "reporter":"junit",
-    "reporterOptions":{
-        "mochaFile":"cypress/results/test-results.[hash].xml",
-        "toConsole":true
-    }
+    "reporter": "mocha-junit-reporter",
+    "reporterOptions": {
+        "mochaFile": "cypress/reports/junit/test-results.[hash].xml",
+         "testsuitesTitle": false}
 }
