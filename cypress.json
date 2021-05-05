@@ -1,4 +1,5 @@
 {
+    "projectId": "InternetBanking01",
     "waitForAnimations": true,
     "animationDistanceThreshold": 20,
     "defaultCommandTimeout": 90000,
