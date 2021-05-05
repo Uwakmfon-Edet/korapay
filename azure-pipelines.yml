@@ -51,8 +51,8 @@ jobs:
          npm run cy:run
            displayName: 'Run Cypress tests'
 
-             - task: PublishTestResults@2
-           inputs:
-             testResultsFormat: 'JUnit'
-            testResultsFiles: '*.xml'
-            mergeTestResults: true
+   - task: PublishTestResults@2
+      inputs:
+      testResultsFormat: 'JUnit'
+       testResultsFiles: '*.xml'
+       mergeTestResults: true
