@@ -9,7 +9,6 @@
     "cy:run": "cypress run",
     "cy:run:record": "cypress run --record",
     "cy:open": "cypress open"
-  
   },
   "author": "StanbicIBTC Teat automation team",
   "license": "ISC",
