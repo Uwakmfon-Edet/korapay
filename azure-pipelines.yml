@@ -47,12 +47,12 @@ jobs:
       # The test artifacts (video, screenshots, test output) will be uploaded to Cypress dashboard.
       # To record on Cypress dashboard we need to set CYPRESS_RECORD_KEY environment variable.
       # For setting ci-build-id, BUILD_BUILDNUMBER is a good candidate
-      - script: |
+        - script: |
          npm run cy:run
            displayName: 'Run Cypress tests'
 
-      - task: PublishTestResults@2
-        inputs:
-           testResultsFormat: 'JUnit'
-           testResultsFiles: '*.xml'
-           mergeTestResults: true
+             - task: PublishTestResults@2
+           inputs:
+             testResultsFormat: 'JUnit'
+            testResultsFiles: '*.xml'
+            mergeTestResults: true
