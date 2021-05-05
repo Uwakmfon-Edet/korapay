@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="98.0080" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-04T19:58:21" tests="0" file="cypress/integration/cucumber-tests/login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login to Internet Banking" timestamp="2021-05-04T19:58:21" tests="1" time="98.0080" failures="0">
+    <testcase name="Login to Internet Banking Login to Internet banking with valid credentials" time="98.0080" classname="Login to Internet banking with valid credentials">
+    </testcase>
+  </testsuite>
+</testsuites>
