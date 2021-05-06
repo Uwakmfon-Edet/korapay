@@ -9,7 +9,7 @@ jobs:
   # Job names can contain alphanumeric characters and '_', cannot start with a number
   - job: InternetBanking_Automated_Tests
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'windows-2019'
    
     steps:
       - task: NodeTool@0
