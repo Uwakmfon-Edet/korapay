@@ -21,7 +21,7 @@ Feature: Trnasfers
         And selects source and destination recpAccountNo
         And enters amount and narrationsand clicks continue
         Then user should verify payment details and payment should be processed
-@focus
+
     Scenario: Transfer to @Ease Account
         And click on transfer to atEase Account
         And enters amonut, account number and narrations
