@@ -7,11 +7,9 @@ jobs:
   #   https://www.cypress.io/
 
   # Job names can contain alphanumeric characters and '_', cannot start with a number
-  - job: Cypress_e2e_tests
+  - job: SetUp_and_RunTests
     pool:
-      vmImage: 'ubuntu-16.04'
-   # strategy:
-    #  parallel: 4
+    vmImage: 'ubuntu-16.04'
     steps:
       - task: NodeTool@0
         inputs:
@@ -38,6 +36,11 @@ jobs:
           restoreKeys: cypress | $(Agent.OS) | package-lock.json
         displayName: Cache Cypress binary
 
+      - task: DeleteFiles@1
+        inputs:
+          SourceFolder: '$(System.DefaultWorkingDirectory)/cypress/results/'
+          Contents: '*.*'
+
       # Install Node dependencies
       - script: npm install
         displayName: 'Install dependencies'
@@ -60,4 +63,24 @@ jobs:
             testResultsFiles: '*.xml'
             searchFolder: '$(System.DefaultWorkingDirectory)/cypress/reports/junit'
             mergeTestResults: true
-       
+            testRunTitle: Cypress Test Results
+
+  - job: Publish_Test_Artifacts
+    dependsOn: Job_2
+    condition: eq(dependencies.SetUp_and_RunTests.result,'SucceededWithIssues')
+    displayName: Publish-Screens-on-Fail
+    pool:
+      name: Default  
+    steps:
+    - checkout: none
+    
+    - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: screenshots'
+    condition: succeededOrFailed()
+    continueOnError: True
+    inputs:
+      PathtoPublish: $(System.DefaultWorkingDirectory)/cypress/screenshots
+      ArtifactName: screenshots
+
+  
+      
