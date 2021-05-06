@@ -7,7 +7,7 @@ jobs:
   #   https://www.cypress.io/
 
   # Job names can contain alphanumeric characters and '_', cannot start with a number
-  - job: Internet Banking Automated Tests - New
+  - job: Cypress_e2e_tests
     pool:
       vmImage: 'ubuntu-16.04'
     #   strategy:
@@ -39,7 +39,8 @@ jobs:
         displayName: Cache Cypress binary
 
       # Install Node dependencies
-         - script: npm run cy:verify
+     
+      - script: npm run cy:verify
         displayName: 'Cypress verify'
 
       
@@ -47,12 +48,13 @@ jobs:
       # The test artifacts (video, screenshots, test output) will be uploaded to Cypress dashboard.
       # To record on Cypress dashboard we need to set CYPRESS_RECORD_KEY environment variable.
       # For setting ci-build-id, BUILD_BUILDNUMBER is a good candidate
-        - script: |
+      - script: |
          npm run cy:run
            displayName: 'Run Cypress tests'
 
-   - task: PublishTestResults@2
-      inputs:
-      testResultsFormat: 'JUnit'
-       testResultsFiles: '*.xml'
-       mergeTestResults: true
+      - task: PublishTestResults@2
+        inputs:
+          testResultsFormat: 'JUnit'
+          testResultsFiles: '*.xml'
+          searchFolder: '$(System.DefaultWorkingDirectory)/cypress/reports/junit'
+          mergeTestResults: true
