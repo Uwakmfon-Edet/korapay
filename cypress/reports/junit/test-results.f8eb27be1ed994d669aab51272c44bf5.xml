@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="190.1380" tests="3" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-05-14T21:38:47" tests="0" file="cypress/integration/cucumber-tests/Transfer.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Trnasfers" timestamp="2021-05-14T21:38:48" tests="3" time="190.1380" failures="1">
+    <testcase name="Trnasfers Transfer to Others" time="0.0000" classname="Transfer to Others">
+      <failure message="Timed out retrying after 90000ms: Expected to find element: `.mat-option-text`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 90000ms: Expected to find element: `.mat-option-text`, but never found it.
+    at Function.selectDestBank (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\Transfer.feature:192:10)
+    at Context.eval (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\Transfer.feature:390:36)
+    at Context.resolveAndRunStepDefinition (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\Transfer.feature:10936:9)
+    at Context.eval (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\Transfer.feature:10275:35)]]></failure>
+    </testcase>
+    <testcase name="Trnasfers Transfer to Self" time="96.4130" classname="Transfer to Self">
+    </testcase>
+    <testcase name="Trnasfers Transfer to @Ease Account" time="93.7250" classname="Transfer to @Ease Account">
+    </testcase>
+  </testsuite>
+</testsuites>

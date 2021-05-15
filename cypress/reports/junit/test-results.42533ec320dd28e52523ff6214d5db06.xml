@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="79.8880" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-15T11:02:14" tests="0" file="cypress/integration/cucumber-tests/Beneficiaries.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Beneficiaries" timestamp="2021-05-15T11:02:14" tests="1" time="79.8880" failures="0">
+    <testcase name="Beneficiaries Add / Remove Beneficiaries" time="79.8880" classname="Add / Remove Beneficiaries">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -6,7 +6,7 @@ const select_FromAcct =
 const txt_DestAccount = "input[name='destAccountNo']";
 const txt_Amount = "input[name='amount']";
 const select_DestBank = ".mat-select-placeholder";
-const select_zenothBank = "#mat-option-256 > .mat-option-text"
+const select_zenothBank = "#mat-option-256 > .mat-option-text";
 //"#mat-option-264 > .mat-option-text";
 const txt_RecpName = "input[name='beneficiaryName']";
 const txt_SenderNarration = "input[name='benenficiaryRef']";
@@ -38,11 +38,12 @@ class TransferToOthersPage {
     cy.get(txt_Amount).type(Amount);
   }
   static selectDestBank() {
-      cy.get(select_DestBank)
-    .should('be.visible')
-    .wait(500)
-    .trigger("mouseover").click({ force: true });
-    cy.get('.mat-option-text').contains('Zenith Bank').click();
+    cy.wait(10000);
+    cy.get(select_DestBank)
+      .should("be.visible")
+      .trigger("mouseover")
+      .click({ force: true });
+    cy.get(".mat-option-text").contains("Zenith Bank").click();
   }
   static fillRecpName(RecipientName) {
     cy.get(txt_RecpName).type(RecipientName);

@@ -1,9 +1,8 @@
 Feature: Trnasfers
-    I want to transfer funds to self
-    Feature Description
+    I want to be able to execute all the transfer functionalities
 
     Background: Login to Internet banking
-        Given I am on the dashboard aftdr logging in with "0033518069" and "Test12345@6" and token as "12345"
+        Given I am on the dashboard after logging in with "0033518069" and "Test12345@6" and token as "12345"
         When I click the transfers link
 
     Scenario: Transfer to Others
@@ -28,3 +27,9 @@ Feature: Trnasfers
         And clicks continue
         Then user shoule be able to verify transfer details and enter OTP
         And complete transfer transaction
+
+    # Scenario: Pay Beneficiaries
+    # This functionality is currently not working in UAT
+
+    # Scenario: Fund prepaid 
+    # This functionality is currently not working in UAT

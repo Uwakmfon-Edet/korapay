@@ -5,7 +5,7 @@ import TransferToSelfPage from "./TransferToSelfPage";
 import TransferToAtEasePage from "./TransferToAtEasePage";
 
 Given(
-  "I am on the dashboard aftdr logging in with {string} and {string} and token as {string}",
+  "I am on the dashboard after logging in with {string} and {string} and token as {string}",
   (UserID, Password, Token) => {
     LoginPage.visit();
     cy.url().should("include", "login");
@@ -16,8 +16,7 @@ Given(
     LoginPage.fillOTP(Token);
     LoginPage.submitOTP();
     cy.get("div").should("contain", "SAVINGS");
-    //  TransferToOthersPage.clickHamburger();
-  }
+    }
 );
 
 When("I click the transfers link", () => {

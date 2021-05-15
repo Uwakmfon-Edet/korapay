@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="327.4030" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-15T13:24:39" tests="0" file="cypress/integration/cucumber-tests/Transfer.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Trnasfers" timestamp="2021-05-15T13:24:39" tests="3" time="327.4030" failures="0">
+    <testcase name="Trnasfers Transfer to Others" time="130.4400" classname="Transfer to Others">
+    </testcase>
+    <testcase name="Trnasfers Transfer to Self" time="102.0900" classname="Transfer to Self">
+    </testcase>
+    <testcase name="Trnasfers Transfer to @Ease Account" time="94.8730" classname="Transfer to @Ease Account">
+    </testcase>
+  </testsuite>
+</testsuites>

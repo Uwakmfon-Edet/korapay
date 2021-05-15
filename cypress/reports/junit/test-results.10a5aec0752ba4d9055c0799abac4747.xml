@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="2">
+  <testsuite name="Root Suite" timestamp="2021-05-06T20:42:17" tests="0" file="cypress/integration/cucumber-tests/login.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Login to Internet Banking" timestamp="2021-05-06T20:42:17" tests="1" time="0.0000" failures="2">
+    <testcase name="Login to Internet Banking Login to Internet banking with valid credentials" time="0.0000" classname="Login to Internet banking with valid credentials">
+      <failure message="Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands." type="CypressError"><![CDATA[CypressError: Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.json` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+    at timedOutWaitingForPageLoad (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:137597:13)
+    at https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:138617:16
+    at tryCatcher (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:10791:23)
+    at https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:5913:41
+    at tryCatcher (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:10791:23)
+    at Promise._settlePromiseFromHandler (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:8726:31)
+    at Promise._settlePromise (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:8783:18)
+    at Promise._settlePromise0 (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:8828:10)
+    at Promise._settlePromises (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:8904:18)
+    at _drainQueueStep (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:5498:12)
+    at _drainQueue (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:5491:9)
+    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:5507:5)
+    at Async.drainQueues (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:5377:14)
+From Your Spec Code:
+    at Function.visit (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:64:10)
+    at Context.eval (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:109:25)
+    at Context.resolveAndRunStepDefinition (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:10553:9)
+    at Context.eval (https://80.248.0.83:3443/__cypress/tests?p=cypress\integration\cucumber-tests\login.feature:9892:35)]]></failure>
+    </testcase>
+    <testcase name="Login to Internet Banking &quot;after all&quot; hook for &quot;Login to Internet banking with valid credentials&quot;" time="0.0000" classname="&quot;after all&quot; hook for &quot;Login to Internet banking with valid credentials&quot;">
+      <failure message="Cypress command timeout of `90000ms` exceeded.
+
+Because this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Login to Internet Banking`" type="CypressError"><![CDATA[CypressError: Cypress command timeout of `90000ms` exceeded.
+
+Because this error occurred during a `after all` hook we are skipping the remaining tests in the current suite: `Login to Internet Banking`
+    at cypressErr (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:153726:18)
+    at Object.errByPath (https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:153795:10)
+    at https://80.248.0.83:3443/__cypress/runner/cypress_runner.js:155523:29]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
