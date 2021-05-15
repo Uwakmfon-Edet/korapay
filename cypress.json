@@ -12,6 +12,7 @@
     "testFiles": "**/*.{feature,features}",
     "viewportWidth": 1920,
     "viewportHeight": 1000,
+    "videoUploadOnPasses":false,
     "reporter": "mocha-junit-reporter",
     "reporterOptions": {
         "mochaFile": "cypress/reports/junit/test-results.[hash].xml",

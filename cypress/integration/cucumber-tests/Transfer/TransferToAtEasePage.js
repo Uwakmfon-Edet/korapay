@@ -29,13 +29,13 @@ class TransferToAtEasePage {
     cy.get(btn_continue).click();
   }
   static verifyPaymentDetails() {
-    cy.get(chckbx_verifyPament).click();
-    cy.get(btn_verifyContinue).click();
+    cy.get(chckbx_verifyPament).click({ force: true });
+    cy.get(btn_verifyContinue).click({ force: true });
   }
 
   static verifyOTP() {
     cy.get(txt_tokenInput).type("12345");
-    cy.get('button').contains('Verify').click();
+    cy.get('button').contains('Verify').click({ force: true });
   }
 
   static completeTransaction() {

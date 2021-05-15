@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="122.8080" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-15T15:15:36" tests="0" file="cypress/integration/cucumber-tests/ServiceRequest.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Service Request" timestamp="2021-05-15T15:15:36" tests="1" time="122.8080" failures="0">
+    <testcase name="Service Request Verify all service request functionalities" time="122.8080" classname="Verify all service request functionalities">
+    </testcase>
+  </testsuite>
+</testsuites>

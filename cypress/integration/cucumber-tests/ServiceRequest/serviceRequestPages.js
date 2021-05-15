@@ -110,7 +110,7 @@ class serviceRequestPages {
       .click({ force: true });
     cy.get(select_Embassy).click({ force: true });
     cy.get(select_destination)
-      .wait(2000)
+      .wait(8000)
       .should("be.visible")
       .trigger("mouseover")
       .click({ force: true });
@@ -123,8 +123,8 @@ class serviceRequestPages {
     cy.get(select_Applicant).click({ force: true });
     cy.get(txt_applicantName).type("Uwakmfon Edet");
     cy.get(btn_continue).click({ force: true });
-    cy.get(btn_confirmContinue).click({ force: true });
-    cy.get(btn_downloadReceipt).should("be.visible");
+    cy.get(btn_confirmContinue).should("be.visible");
+ //   cy.get(btn_downloadReceipt).should("be.visible");
     cy.log('Account Statement has been sent successfully')
   }
 }
