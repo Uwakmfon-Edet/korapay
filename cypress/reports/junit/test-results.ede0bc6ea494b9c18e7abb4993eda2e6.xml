@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="12.9240" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-18T22:42:34" tests="0" file="cypress/integration/cucumber-tests/Signup.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Signup" timestamp="2021-05-18T22:42:34" tests="1" time="12.9240" failures="0">
+    <testcase name="Signup SignUp with valid credentials" time="12.9240" classname="SignUp with valid credentials">
+    </testcase>
+  </testsuite>
+</testsuites>

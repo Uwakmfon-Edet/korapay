@@ -1,5 +1,5 @@
 {
-    "projectId": "InternetBanking01",
+    "projectId": "korapaytests01",
     "waitForAnimations": true,
     "animationDistanceThreshold": 20,
     "defaultCommandTimeout": 90000,

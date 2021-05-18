@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.2380" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-05-18T22:41:22" tests="0" file="cypress/integration/cucumber-tests/ChangePassword.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="ChangePassword" timestamp="2021-05-18T22:41:22" tests="1" time="16.2380" failures="0">
+    <testcase name="ChangePassword Change Password" time="16.2380" classname="Change Password">
+    </testcase>
+  </testsuite>
+</testsuites>

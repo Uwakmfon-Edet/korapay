@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="193.5490" tests="3" failures="0" skipped="2">
-  <testsuite name="Root Suite" timestamp="2021-05-04T20:00:41" tests="0" file="cypress/integration/cucumber-tests/Transfer.feature" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Trnasfers" timestamp="2021-05-04T20:00:41" tests="3" time="193.5490" failures="0">
-    <testcase name="Trnasfers Transfer to @Ease Account" time="193.5490" classname="Transfer to @Ease Account">
-    </testcase>
-  </testsuite>
-</testsuites>

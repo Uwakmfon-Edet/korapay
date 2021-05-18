@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="101.9340" tests="1" failures="0">
-  <testsuite name="Root Suite" timestamp="2021-05-15T15:00:20" tests="0" file="cypress/integration/cucumber-tests/AirtimeTopup.feature" time="0.0000" failures="0">
-  </testsuite>
-  <testsuite name="Airtime TopUp" timestamp="2021-05-15T15:00:21" tests="1" time="101.9340" failures="0">
-    <testcase name="Airtime TopUp Airtime TopUp" time="101.9340" classname="Airtime TopUp">
-    </testcase>
-  </testsuite>
-</testsuites>
